@@ -1,0 +1,194 @@
+*{
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+}
+
+body{
+    background-color: #0e0e0e;
+    margin-left: 3%;
+    /* width: 96vw; */
+}
+.navBar{
+    background-color: #0e0e0e;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 71px;
+    margin-left: 67px;
+}
+.navBar-header{
+    font-weight: 600;
+    font-size: 20px;
+    color: white;
+    padding-left: 10px;
+    margin-right: 8px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.navElements{
+    margin-left: 15px;
+    margin-right: 10px;
+    color: gray;
+    font-size: 14px;
+    font-weight: 700;
+}
+.navElements:hover{
+    color: #e9eaeb;
+}
+.download-button{
+    background-color: #0078d4;
+    color: white;
+    border-radius: 6px;
+    font-weight: 700;
+    padding-right: 15px;
+    padding-left: 13px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.search-box{
+    display: flex;
+    align-items: center;
+    border: grey solid 1px;
+    height:23px;
+    width: 200px;
+    margin-left: 10px;
+    padding-left: 10px;
+    padding-bottom: 2px;
+    padding-top: 2px;
+    margin-right: 5px;
+}
+.nav-right-content{
+    display: flex;
+    align-items: center;
+}
+.notification{
+    color: gray;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+.pre-header{
+    border: gray solid 1px;
+    color: gray;
+    background-color: rgba(255, 255, 255, 0.04);
+    border-radius: 15px;
+    padding: 5px;
+    width: 326px;
+    text-align: center;
+    margin-bottom: 14px;
+}
+/* .logo{
+    padding-top: 12px;
+    } */
+    .hyperlinks{
+        color: 0078d4;
+        font-weight: 600;
+        margin-right: 5px;
+    }
+ .body-hyperlinks{
+     color: 0078d4;
+     font-weight: 600;
+    }
+    .main-text{
+        color: white;
+        font-weight: 600;
+        font-size: 60px;
+        padding-right: 7px;
+    }
+    .main-left-content{
+        display: flex;
+        flex-direction: column;
+        padding-top: 95px;
+        padding-left: 63px;
+    }
+    .first-body{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 75px;
+    }
+    .download-for-button{
+background-color: #0078d4;
+    color: white;
+    border-radius: 6px;
+    font-weight: 700;
+    padding-right: 15px;
+    padding-left: 13px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    width: 262px;
+    font-size: 18px;
+    margin-bottom: 14px;
+    margin-top: 23px;
+    height: 45px;
+    }
+    .search-input{
+        background-color: #0e0e0e;
+        padding-left: 9px;
+        border: none;
+    }
+    .second-body{
+    margin-top: 11%;
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin-left: 5%;
+    }
+    .languages{
+        color: #9ba3b4;
+    }
+    .second-left-content{
+width: 58%;
+    }
+    .second-right-content{
+    display: flex;
+    width: 89%;
+    justify-content: space-between;
+    margin-left: 6%;
+    margin-right: 8%;
+    }
+    .third-right-content{
+    display: flex;
+    width: 89%;
+    justify-content: space-between;
+margin-left: 13%;
+    margin-right: 0;
+    }
+    .extentions-child{
+        display: flex;
+        flex-direction: column;
+        color: 9ba3b4;
+    }
+    .extension-child-col{
+            display: flex;
+    border: rgba(255, 255, 255, 0.07) solid 1px;
+    padding: 18px;
+    background-color: rgba(255, 255, 255, 0.04);
+    border-radius: 7px;
+    margin-right: 16px;
+    margin-bottom: 16px;
+    }
+    .fifth-body{
+        margin-top: 100px;
+        margin-bottom: 10px;
+        display: flex;
+        justify-content: center;
+    }
+        .last-body-child{
+        display: flex;
+        flex-direction: column;
+        color: 9ba3b4;
+    }
+        .last-body-child-col{
+    border: rgba(255, 255, 255, 0.07) solid 1px;
+    padding: 18px;
+    background-color: rgba(255, 255, 255, 0.04);
+    border-radius: 7px;
+    margin-right: 16px;
+    margin-bottom: 16px;
+    height: 138px;
+    }
+    .extension-text{
+        font-size: 13px;
+    width: 150px;
+    }
