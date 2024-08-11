@@ -1,0 +1,376 @@
+<head>
+  <title>Visual Studio Code - Code Editor</title>
+  <link rel="stylesheet" href="index.css">
+  <link rel="icon" href="https://code.visualstudio.com/favicon.ico" type="image/x-icon">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+  <header>
+    <div class="navBar">
+      <div style="align-items: center; display: flex;">
+        <img class="logo" src="https://code.visualstudio.com/favicon.ico" alt="Visual Studio Code Logo" width="22">
+        <span class="navBar-header">Visual Studio Code</span>
+        <span class="navElements">Docs</span>
+        <span class="navElements">Updates</span>
+        <span class="navElements">Blog</span>
+        <span class="navElements">API</span>
+        <span class="navElements">Extensions</span>
+        <span class="navElements">FAQ</span>
+        <span class="navElements">Learn</span>
+      </div>
+      <div class="nav-right-content">
+
+        <img class="theme-icon-light" src="https://code.visualstudio.com/assets/icons/theme-light.svg" alt="Switch to the dark theme" width="20">
+        <div class="search-box">
+          <!-- <p style="color: gray;padding-left: 10px;">Search Docs</p> -->
+          <img style="padding-left: 5px;" src="https://code.visualstudio.com/assets/icons/search-dark.svg" alt="Switch to the dark theme">
+          <input type="text" placeholder="Search Docs" class="search-input">
+        </div>
+        <button class="download-button">Download</button>
+        
+      </div>
+    </div>
+  </header>
+
+  <body>
+    <div>
+      <div class="notification">
+        <a href="" class="hyperlinks">
+          Version 1.92</a>  
+          is now available! Read about the new features and fixes from July.
+          <div>
+              <span class="glyphicon glyphicon-remove"></span>
+          </div>
+      </div>
+  
+      <div class="first-body">
+        <div class="main-left-content">
+          <div class="pre-header">Free. Built on open source. Runs everywhere.</div>
+          <span class="main-text">Code Editing.</span>
+          <span class="main-text">Redefined.</span>
+          <button class="download-for-button">Download for Windows</button>
+          <div style="margin-bottom: 16px;">
+            <a class="body-hyperlinks" href="">Web</a>
+            <span style="color: gray;">,</span>
+            <a class="body-hyperlinks" href="">Insiders edition</a>
+            <span style="color: gray;">,</span>
+            <a class="body-hyperlinks" href="">other platforms</a>
+          </div>
+          <div style="font-size: 13px;">
+            <span style="color: gray;">By using VS Code, you agree to its</span>
+            <a class="body-hyperlinks"  href="">license</a>
+            <span style="color: gray;">and</span>
+            <a class="body-hyperlinks"  href="">privacy statement</a>
+          </div>
+        </div>
+        <img src="https://code.visualstudio.com/assets/home/home-screenshot-mac-2x-v2.png" alt="Visual Studio Code Hero Image" width="800" style="margin-right: 74px;margin-left: 25px;">
+      </div>
+      <div class="second-body">
+        <div class="second-left-content">
+          <span class="main-text" style="font-size: 30px;">Code in any language</span><br>
+          <span class="main-text" style="font-size: 17px;color: #9ba3b4;">VS Code supports almost every major programming language. Several ship in the box, like JavaScript, TypeScript, CSS, and HTML, but extensions for others can be found in the VS Code Marketplace.</span>
+        </div>
+        <div class="second-right-content">
+          <div>
+            <div style="display: flex; align-items: center;">
+              <img src="https://code.visualstudio.com/assets/home/language-js.png" alt="Visual Studio Code Hero Image" width="40">
+             <span class="languages">JavaScript</span>
+            </div>
+            <div style="display: flex; align-items: center;">
+              <img src="https://code.visualstudio.com/assets/home/language-cs.png" alt="Visual Studio Code Hero Image" width="40">
+             <span class="languages">C#</span>
+            </div>
+            <div style="display: flex; align-items: center;">
+              <img src="https://code.visualstudio.com/assets/home/language-java.png" alt="Visual Studio Code Hero Image" width="40">
+             <span class="languages">Java</span>
+            </div>
+            <div style="display: flex; align-items: center;">
+              <img src="https://code.visualstudio.com/assets/home/language-markdown.png" alt="Visual Studio Code Hero Image" width="40">
+             <span class="languages">Markdown</span>
+            </div>
+          </div>
+          <div>
+            <div style="display: flex; align-items: center;">
+              <img src="https://code.visualstudio.com/assets/home/language-ts.png" alt="Visual Studio Code Hero Image" width="40">
+             <span class="languages">JavaScript</span>
+            </div>
+            <div style="display: flex; align-items: center;">
+              <img src="https://code.visualstudio.com/assets/home/language-cpp.png" alt="Visual Studio Code Hero Image" width="40">
+             <span class="languages">C++</span>
+            </div>
+            <div style="display: flex; align-items: center;">
+              <img src="https://code.visualstudio.com/assets/home/language-json.png" alt="Visual Studio Code Hero Image" width="40">
+             <span class="languages">JSON</span>
+            </div>
+            <div style="display: flex; align-items: center;">
+              <img src="https://code.visualstudio.com/assets/home/language-powershell.png" alt="Visual Studio Code Hero Image" width="40">
+             <span class="languages">Powershell</span>
+            </div>
+          </div>
+          <div>
+            <div style="display: flex; align-items: center;">
+              <img src="https://code.visualstudio.com/assets/home/language-python.png" alt="Visual Studio Code Hero Image" width="40">
+             <span class="languages">Python</span>
+            </div>
+            <div style="display: flex; align-items: center;">
+              <img src="https://code.visualstudio.com/assets/home/language-html.png" alt="Visual Studio Code Hero Image" width="40">
+             <span class="languages">HTML#</span>
+            </div>
+            <div style="display: flex; align-items: center;">
+              <img src="https://code.visualstudio.com/assets/home/language-php.png" alt="Visual Studio Code Hero Image" width="40">
+             <span class="languages">PHP</span>
+            </div>
+            <div style="display: flex; align-items: center;">
+              <img src="https://code.visualstudio.com/assets/home/language-yaml.png" alt="Visual Studio Code Hero Image" width="40">
+             <span class="languages">YAML</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="second-body">
+        <div class="second-left-content">
+          <span class="main-text" style="font-size: 30px;">Code with extensions</span><br>
+          <span class="main-text" style="font-size: 17px;color: #9ba3b4;">Whether you're a beginner or an expert, we've got you covered. Choose from hundreds of extensions to power up your VS Code experience.</span>
+          <br><a href="" style="    font-weight: 500;color:#4daafc">Learn more about extensions</a>
+        </div>
+        <div class="third-right-content">
+          <div>
+            <div class="extension-child-col">
+              <div>
+                <img src="https://code.visualstudio.com/assets/images/python-extension.png" alt="Visual Studio Code Hero Image" width="40" style="margin-right: 13px;">
+              </div>
+              <div class="extentions-child" style="height: 58px;">
+                <span style="color: white;">Python</span>
+                <span   class="extension-text">Adds rich language support for Python</span>
+              </div>
+            </div>
+            <div class="extension-child-col" style="  ">
+              <div>
+                <img src="https://code.visualstudio.com/assets/images/jupyter-extension.png" alt="Visual Studio Code Hero Image" width="40" style="margin-right: 13px;">
+              </div>
+              <div class="extentions-child">
+                <span style="color: white;">Jupyter</span>
+                <span   class="extension-text">Language support for Jupyter Notebooks</span>
+              </div>
+            </div>
+            <div class="extension-child-col">
+              <div>
+                <img src="https://code.visualstudio.com/assets/images/github-pull-requests-extension.png" alt="Visual Studio Code Hero Image" width="40" style="margin-right: 13px;">
+              </div>
+              <div class="extentions-child"  style="  height: 98px;">
+                <span style="color: white;">GitHub Codespaces</span>
+                <span   class="extension-text">Fully configured dev environments in the cloud</span>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="extension-child-col">
+              <div>
+                <img src="	https://code.visualstudio.com/assets/images/copilot-extension.png" alt="Visual Studio Code Hero Image" width="40" style="margin-right: 13px;">
+              </div>
+              <div class="extentions-child" style="height: 58px;">
+                <span style="color: white;">GitHub Copilot</span>
+                <span   class="extension-text">Your AI pair programmer</span>
+              </div>
+            </div>
+            <div class="extension-child-col"  style="  ">
+              <div>
+                <img src="https://code.visualstudio.com/assets/images/gitlens-extension.png" alt="Visual Studio Code Hero Image" width="40" style="margin-right: 13px;">
+              </div>
+              <div class="extentions-child">
+                <span style="color: white;">GitLens</span>
+                <span   class="extension-text">Superchage your Git experience</span>
+              </div>
+            </div>
+            <div class="extension-child-col"  style="  height: 98px;">
+              <div>
+                <img src="https://code.visualstudio.com/assets/images/github-pull-requests-extension.png" alt="Visual Studio Code Hero Image" width="40" style="margin-right: 13px;">
+              </div>
+              <div class="extentions-child">
+                <span style="color: white;">GitHub Pull Requests</span>
+                <span   class="extension-text">Collaborate on issues and pull requests</span>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="extension-child-col">
+              <div>
+                <img src="https://code.visualstudio.com/assets/images/c-extension.png" alt="Visual Studio Code Hero Image" width="40" style="margin-right: 13px;">
+              </div>
+              <div class="extentions-child" style="height: 58px;">
+                <span style="color: white;">C/C++</span>
+                <span   class="extension-text">Adds rich language support for C/C++</span>
+              </div>
+            </div>
+            <div class="extension-child-col"  style="  ">
+              <div>
+                <img src="https://code.visualstudio.com/assets/images/cs-dev-kit-extension.png" alt="Visual Studio Code Hero Image" width="40" style="margin-right: 13px;">
+              </div>
+              <div class="extentions-child">
+                <span style="color: white;">C# Dev Kit</span>
+                <span   class="extension-text">Powerful tools for your C# environment</span>
+              </div>
+            </div>
+            <div class="extension-child-col">
+              <div>
+                <img src="https://code.visualstudio.com/assets/images/remote-extension.png" alt="Visual Studio Code Hero Image" width="40" style="margin-right: 13px;">
+              </div>
+              <div class="extentions-child">
+                <span style="color: white;">Remote Development</span>
+                <span   class="extension-text">Open folders in a container on a remote machine</span>
+              </div>
+            </div>
+          </div>
+         
+        </div>
+      </div>
+      <div class="second-body">
+        <div class="second-left-content">
+          <span class="main-text" style="font-size: 30px;">Code with GitHub Copilot</span><br>
+          <span class="main-text" style="font-size: 17px;color: #9ba3b4;">Write code faster and smarter with GitHub Copilot, your AI pair programmer.</span>
+          <br><a href="" style="    font-weight: 500;color:#4daafc">Try GitHub Copilot free for 30 days</a>
+          <br><br><br><a href="" style="    font-weight: 500;color:#4daafc">Completions</a>
+          <span class="main-text" style="font-size: 17px;color: #9ba3b4;">present suggestions automatically to help you code more efficiently.</span>
+          <br><br><br><a href="" style="    font-weight: 500;color:#4daafc">Copilot Chat</a>
+          <span class="main-text" style="font-size: 17px;color: #9ba3b4;">understands the context of your code, workspace, extensions, settings, and more.</span>
+          <br><br><br><a href="" style="    font-weight: 500;color:#4daafc">Inline Chat</a>
+          <span class="main-text" style="font-size: 17px;color: #9ba3b4;">enables you to iteratively generate edits and get answers to quick questions, directly on your code.</span>
+        </div>
+        <img src="https://code.visualstudio.com/assets/home/swimlane-copilot.png" alt="Visual Studio Code Hero Image" width="786" style="margin-left: 150px;">
+        </div>
+      <div class="second-body">
+        <div class="second-left-content">
+          <span class="main-text" style="font-size: 30px;">Code fully customized</span><br>
+          <span class="main-text" style="font-size: 17px;color: #9ba3b4;">Customize your VS Code UI and layout so that it fits your coding style.</span>
+          <br><br><br><a href="" style="    font-weight: 500;color:#4daafc">Color themes</a>
+          <span class="main-text" style="font-size: 17px;color: #9ba3b4;">let you modify the colors in VS Code's user interface to suit your preferences and work environment.</span>
+          <br><br><br><a href="" style="    font-weight: 500;color:#4daafc">Settings Sync</a>
+          <span class="main-text" style="font-size: 17px;color: #9ba3b4;">enables you to share your user settings across your VS Code instances with the Settings Sync feature.</span>
+          <br><br><br><a href="" style="    font-weight: 500;color:#4daafc">Profiles</a>
+          <span class="main-text" style="font-size: 17px;color: #9ba3b4;">let you create sets of customizations and quickly switch between them or share them with others.</span>
+        </div>
+        <img src="https://code.visualstudio.com/assets/home/swimlane-customized.png" alt="Visual Studio Code Hero Image" width="786" style="margin-left: 150px;">
+        </div>
+      <div class="second-body">
+        <div class="second-left-content">
+          <span class="main-text" style="font-size: 30px;">Code anywhere</span><br>
+          <span class="main-text" style="font-size: 17px;color: #9ba3b4;">Code wherever you're most productive, whether you're connected to the cloud, a remote repository, or in the browser with VS Code for the Web (vscode.dev).</span>
+          <br><br><br><a href="" style="    font-weight: 500;color:#4daafc">Built-in Source Control</a>
+          <span class="main-text" style="font-size: 17px;color: #9ba3b4;">empowers you with Git support out-of-the-box. Many other source control providers are available through extensions.</span>
+          <br><br><br><a href="" style="    font-weight: 500;color:#4daafc">Settings Sync</a>
+          <span class="main-text" style="font-size: 17px;color: #9ba3b4;">enables you to share your user settings across your VS Code instances with the Settings Sync feature.</span>
+          <br><br><br><a href="" style="    font-weight: 500;color:#4daafc">GitHub Codespaces</a>
+          <span class="main-text" style="font-size: 17px;color: #9ba3b4;">provides cloud-powered development environments for any activity - whether it's a long-term project, or a short-term task like reviewing a pull request.
+
+</span>
+        </div>
+        <img src="https://code.visualstudio.com/assets/home/swimlane-anywhere.png" alt="Visual Studio Code Hero Image" width="786" style="margin-left: 150px;">
+        </div>
+
+      </div>
+      <div class="fifth-body">
+        <span class="main-text" style="font-size: 30px;">Code with rich features</span><br>
+      </div>
+      <span class="main-text" style="font-size: 17px;color: #9ba3b4;display: flex; justify-content: center;">There's a lot more to an editor. Whether it's using built-in features or rich extensions, there's something for everyone.</span>
+      <div style="display: flex;justify-content: center;width: 100%;margin-top: 50px;">
+        <div class="last-body">
+                      <div class="last-body-child-col">
+                        <div>
+                                <img src="	https://code.visualstudio.com/assets/icons/codicon-terminal.svg" alt="Visual Studio Code Hero Image" width="40" style="margin-right: 13px;">
+                              </div>
+                              <div class="last-body-child">
+                                <span style="color: white;margin-bottom: 10px;margin-top: 20px;font-weight: 500;">Integrated terminal</span>
+                                <span style="font-size: 13px; width: 250px;">Use your favorite shell whether it's zsh, pwsh, or git bash, all inside the editor.</span>
+                              </div>
+                      </div>
+                      <div class="last-body-child-col">
+                        <div>
+                                <img src="https://code.visualstudio.com/assets/icons/codicon-local-history.svg" alt="Visual Studio Code Hero Image" width="40" style="margin-right: 13px;">
+                              </div>
+                              <div class="last-body-child">
+                                <span style="color: white;margin-bottom: 10px;margin-top: 20px;font-weight: 500;">Local history</span>
+                                <span style="font-size: 13px; width: 250px;">Never lose your changes with automatically tracked local history.</span>
+                              </div>
+                      </div>
+              </div>
+        <div class="last-body">
+                      <div class="last-body-child-col">
+                        <div>
+                                <img src="https://code.visualstudio.com/assets/icons/codicon-debug.svg" alt="Visual Studio Code Hero Image" width="40" style="margin-right: 13px;">
+                              </div>
+                              <div class="last-body-child">
+                                <span style="color: white;margin-bottom: 10px;margin-top: 20px;font-weight: 500;">Run code</span>
+                                <span style="font-size: 13px; width: 250px;">Run and debug your code without leaving your editor.</span>
+                              </div>
+                      </div>
+                      <div class="last-body-child-col">
+                        <div>
+                                <img src="	https://code.visualstudio.com/assets/icons/codicon-themes.svg" alt="Visual Studio Code Hero Image" width="40" style="margin-right: 13px;">
+                              </div>
+                              <div class="last-body-child">
+                                <span style="color: white;margin-bottom: 10px;margin-top: 20px;font-weight: 500;">Themes</span>
+                                <span style="font-size: 13px; width: 250px;">Your theme is an extension of your personality. Add some flair to your editor and add your touch.</span>
+                              </div>
+                      </div>
+              </div>
+        <div class="last-body">
+                      <div class="last-body-child-col">
+                        <div>
+                                <img src="	https://code.visualstudio.com/assets/icons/codicon-version-control.svg" alt="Visual Studio Code Hero Image" width="40" style="margin-right: 13px;">
+                              </div>
+                              <div class="last-body-child">
+                                <span style="color: white;margin-bottom: 10px;margin-top: 20px;font-weight: 500;">Version control</span>
+                                <span style="font-size: 13px; width: 250px;">Built-in support for git and many other source control providers.</span>
+                              </div>
+                      </div>
+                      <div class="last-body-child-col">
+                        <div>
+                                <img src="https://code.visualstudio.com/assets/icons/codicon-accessibility.svg" alt="Visual Studio Code Hero Image" width="40" style="margin-right: 13px;">
+                              </div>
+                              <div class="last-body-child">
+                                <span style="color: white;margin-bottom: 10px;margin-top: 20px;font-weight: 500;">Accessibility</span>
+                                <span style="font-size: 13px; width: 250px;">Optimized experience for screen readers, high contrast themes, and keyboard-only navigation.</span>
+                              </div>
+                      </div>
+              </div>
+        <div class="last-body">
+                      <div class="last-body-child-col">
+                        <div>
+                                <img src="https://code.visualstudio.com/assets/icons/codicon-build-tasks.svg" alt="Visual Studio Code Hero Image" width="40" style="margin-right: 13px;">
+                              </div>
+                              <div class="last-body-child">
+                                <span style="color: white;margin-bottom: 10px;margin-top: 20px;font-weight: 500;">Build tasks</span>
+                                <span style="font-size: 13px; width: 250px;">Run tools and analyze their results from within VS Code.</span>
+                              </div>
+                      </div>
+                      <div class="last-body-child-col">
+                        <div>
+                                <img src="	https://code.visualstudio.com/assets/icons/codicon-web.svg" alt="Visual Studio Code Hero Image" width="40" style="margin-right: 13px;">
+                              </div>
+                              <div class="last-body-child">
+                                <span style="color: white;margin-bottom: 10px;margin-top: 20px;font-weight: 500;">Web support</span>
+                                <span style="font-size: 13px; width: 250px;">Whether you are on your phone, tablet, or desktop, you can access your code from anywhere.</span>
+                              </div>
+                      </div>
+              </div>
+      </div>
+      <div style="display: flex; justify-content: space-between;    width: 84.5%;margin-left: 90px;margin-top: 70px;">
+        <div style="display: flex;">
+          <img src="	https://code.visualstudio.com/assets/icons/x-icon.svg" alt="Visual Studio Code Hero Image" width="20" style="margin-left: 30px;">
+          <img src="https://code.visualstudio.com/assets/icons/github-icon.svg" alt="Visual Studio Code Hero Image" width="20" style="margin-left: 30px;">
+          <img src="	https://code.visualstudio.com/assets/icons/youtube-icon.svg" alt="Visual Studio Code Hero Image" width="20" style="margin-left: 30px;">
+        </div>
+        <div>
+          <img src="	https://code.visualstudio.com/assets/icons/microsoft.svg" alt="Visual Studio Code Hero Image" width="20" style="margin-left: 150px;">
+        </div>
+      </div>
+      <div style="margin-left: 117px; margin-top: 10px;padding-bottom: 100px;">
+        <span style="color: #9ba3b4;font-size: 10px;margin-right:15px">Support</span>
+        <span style="color: #9ba3b4;font-size: 10px;margin-right:15px">Privacy</span>
+        <span style="color: #9ba3b4;font-size: 10px;margin-right:15px">Terms of use</span>
+        <span style="color: #9ba3b4;font-size: 10px;margin-right:15px">License</span>
+      </div>
+      </div>
+    </body>
