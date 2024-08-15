@@ -1,41 +1,51 @@
 import PropTypes from "prop-types";
 
 export default function Grid({ mnemonicArray }) {
-  console.log(mnemonicArray)
   return (
     <>
       <div className="flex justify-center my-5  ">
-        <div className="gridGrp w-24">
-          <div className="p-3 bg-red-500">
-            <span>1.{mnemonicArray[0]}</span>
+        <div className="flex justify-center bg-indigo-300 rounded-md">
+          <div className="gridGrp w-24 mr-5">
+            <div className="p-6">
+              <span className="mr-2">1.</span>
+              <span>{mnemonicArray[0]}</span>
+            </div>
+            <div className="p-6">
+              <span className="mr-2">4.</span>
+              <span>{mnemonicArray[3]}</span>
+            </div>
+            <div className="p-6">
+              <span className="mr-2">7.</span>
+              <span>{mnemonicArray[6]}</span>
+            </div>
           </div>
-          <div className="p-3 bg-red-500">
-            <span>4.{mnemonicArray[3]}</span>
+          <div className="gridGrp w-24 mr-7">
+            <div className="p-6">
+              <span className="mr-2">2.</span>
+              <span>{mnemonicArray[1]}</span>
+            </div>
+            <div className="p-6">
+              <span className="mr-2">5.</span>
+              <span>{mnemonicArray[4]}</span>
+            </div>
+            <div className="p-6">
+              <span className="mr-2">8.</span>
+              <span>{mnemonicArray[7]}</span>
+            </div>
           </div>
-          <div className="p-3 bg-red-500">
-            <span>7.{mnemonicArray[6]}</span>
-          </div>
-        </div>
-        <div className="gridGrp w-24">
-          <div className="p-3 bg-red-500">
-            <span>2.{mnemonicArray[1]}</span>
-          </div>
-          <div className="p-3 bg-red-500">
-            <span>5.{mnemonicArray[4]}</span>
-          </div>
-          <div className="p-3 bg-red-500">
-            <span>8.{mnemonicArray[7]}</span>
-          </div>
-        </div>
-        <div className="gridGrp w-24">
-          <div className="p-3 bg-red-500">
-            <span>3.{mnemonicArray[2]}</span>
-          </div>
-          <div className="p-3 bg-red-500">
-            <span>6.{mnemonicArray[5]}</span>
-          </div>
-          <div className="p-3 bg-red-500">
-            <span>9.{mnemonicArray[8]}</span>
+          <div className="gridGrp w-24 mr-7">
+            <div className="p-6">
+              <span className="mr-2">3.</span>
+              <span>{mnemonicArray[2]}</span>
+            </div>
+            <div className="p-6">
+              <span className="mr-2">6.</span>
+              <span>{mnemonicArray[5]}</span>
+            </div>
+            <div className="p-6">
+              <span className="mr-2">9.</span>
+              <span>{mnemonicArray[8]}</span>
+            </div>
           </div>
         </div>
       </div>

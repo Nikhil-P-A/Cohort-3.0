@@ -33,11 +33,11 @@ export default function SelectMenu({ onSelectChange }) {
   };
   return (
     <Listbox value={selected} onChange={handleChange}>
-      <Label className="text-sm font-medium leading-6 text-gray-900 flex justify-center">
+      <Label className="text-2x1 font-medium leading-6 text-indigo-600 flex justify-center mb-3">
         Choose Blockchain
       </Label>
       <div className="w-screen flex justify-center">
-        <ListboxButton className="w-40 relative w-full cursor-default rounded-md bg-white py-1.5 pl-3 pr-10 text-left text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 focus:outline-none focus:ring-2 focus:ring-indigo-500 sm:text-sm sm:leading-6">
+        <ListboxButton className="w-40 relative cursor-default rounded-md bg-white py-1.5 pl-3 pr-10 text-left text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 focus:outline-none focus:ring-2 focus:ring-indigo-500 sm:text-sm sm:leading-6 mb-10">
           <span className="flex items-center">
             <img
               alt=""
@@ -56,7 +56,7 @@ export default function SelectMenu({ onSelectChange }) {
 
         <ListboxOptions
           transition
-          className="w-40 absolute z-10 mt-10 max-h-56 w-full overflow-auto rounded-md bg-white py-1 text-base shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none data-[closed]:data-[leave]:opacity-0 data-[leave]:transition data-[leave]:duration-100 data-[leave]:ease-in sm:text-sm"
+          className="w-40 absolute z-10 mt-10 max-h-56 overflow-auto rounded-md bg-white py-1 text-base shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none data-[closed]:data-[leave]:opacity-0 data-[leave]:transition data-[leave]:duration-100 data-[leave]:ease-in sm:text-sm"
         >
           {people.map((person) => (
             <ListboxOption
