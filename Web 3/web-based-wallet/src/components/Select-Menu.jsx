@@ -9,26 +9,30 @@ import {
   ListboxOptions,
 } from "@headlessui/react";
 import { CheckIcon, ChevronUpDownIcon } from "@heroicons/react/20/solid";
+import PropTypes from "prop-types";
 
 const people = [
   {
-    id: 1,
+    id: 501,
     name: "Solana",
     avatar: "https://cryptologos.cc/logos/solana-sol-logo.svg?v=032",
   },
   {
-    id: 2,
+    id: 60,
     name: "Ethereum",
     avatar:
       "https://cryptologos.cc/logos/versions/ethereum-eth-logo-colored.svg?v=032",
   },
 ];
 
-export default function SelectMenu() {
+export default function SelectMenu({ onSelectChange }) {
   const [selected, setSelected] = useState(people[0]);
-
+  const handleChange = (blockChain) => {
+    setSelected(blockChain);
+    onSelectChange(blockChain.id);
+  };
   return (
-    <Listbox value={selected} onChange={setSelected}>
+    <Listbox value={selected} onChange={handleChange}>
       <Label className="text-sm font-medium leading-6 text-gray-900 flex justify-center">
         Choose Blockchain
       </Label>
@@ -77,3 +81,6 @@ export default function SelectMenu() {
     </Listbox>
   );
 }
+SelectMenu.propTypes = {
+  onSelectChange:PropTypes.func.isRequired,
+};
