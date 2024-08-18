@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do</title>
+</head>
+<body>
+    <div class="input-class">
+        <input type="text">
+        <button onclick="pushToDo()">Add Task</button>
+    </div>
+    
+</body>
+
+<script>
+    let todos= [];
+    let currentIndex = todos.length;
+    function pushToDo(){
+        let input = document.querySelector("input").value;
+        // console.log(todos.length)
+        if(todos.length == 0){
+            todos.push({id:0, title:input});
+            // console.log(todos);
+        }else{
+            console.log('Itsi n else part');
+            todos.push({id:todos.length, title:input});
+            // todos.push(todos[length-1].id, input);
+        }
+        addToDo();
+        console.log(todos)
+    }
+
+    //Work on DOM manipulation
+    function addToDo(){
+    let div = document.createElement("div");
+    let task = document.createElement("span");
+    div.setAttribute("id","tododiv");
+    task.setAttribute("id","todo-"+currentIndex)
+    task.innerHTML = `${todos.id}" "${todos.title}`;
+    div.appendChild(task);
+}
+</script>
+</html>
