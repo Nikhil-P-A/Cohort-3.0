@@ -26,10 +26,20 @@
             let div = document.createElement("div");
             div.setAttribute("id","tododiv");
             let task = document.createElement("span");
-            task.setAttribute("id","todo-"+currentIndex)
-            task.innerHTML = `${element.id} ${element.title}`;
+            task.setAttribute("id","todo-"+currentIndex);
+            task.innerHTML = `${element.id}. ${element.title}`;
+            task.setAttribute("style","font-size: 30px;")
+            let deleteButton = document.createElement("button");
+            let deleteIcon = document.createElement("img");
+            deleteIcon.src = "https://img.icons8.com/?size=100&id=67884&format=png&color=000000"
+            deleteButton.appendChild(deleteIcon);
+            deleteButton.setAttribute("class","delete-button");
+            deleteIcon.setAttribute("style","width: 27px;");
             div.appendChild(task);
+            div.appendChild(deleteButton);
             document.getElementById("main").append(div)
+
+            deleteButton.addEventListener("click", () => deleteToDo(element.id))
         }); 
     }
     function pushToDo(){
@@ -39,6 +49,14 @@
             todos.push({id:0, title:input});
         }else{
             todos.push({id:todos.length, title:input});
+        }
+        addToDo();
+    }
+    function deleteToDo(id){
+        if(todos.length == 1){
+            todos = [];
+        }else{
+            todos.splice(id,1);
         }
         addToDo();
     }
