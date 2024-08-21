@@ -11,8 +11,8 @@
 
     </div>
     <div class="input-class">
-        <input type="text">
-        <button onclick="pushToDo()">Add Task</button>
+        <input type="text" id="addTask">
+        <button onclick="pushToDo()" class="add-task-button">Add Task</button>
     </div>
     
 </body>
@@ -22,7 +22,7 @@
         background-color: #959595;
     }
     hr{
-        width: 1202px;
+        width: 1269px;
     }
     .header{
         font-size: 50px;
@@ -42,6 +42,9 @@
     #main{
         padding-right: 30px;
         padding-left: 30px;
+        /* max-height: 1020px; */
+        max-height: 356px;
+        overflow-y: scroll;
     }
     #edit{
         border: none;
@@ -96,6 +99,35 @@
     .save-icon{
         width: 27px;
     }
+    .input-class{
+        bottom: 21px;
+        position: fixed;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+    #addTask{
+        font-size: 24px;
+        border-radius: 5px;
+        font-weight: 500;
+        background-color: rgb(228, 228, 228);
+        padding-left: 11px;
+        padding-right: 11px;
+        padding-bottom: 5px;
+        padding-top: 5px;
+    }
+    .add-task-button{
+        padding: 10px;
+        font-size: 14px;
+        margin-left: 5px;
+        border-radius: 9px;
+        background-color: rgb(228, 228, 228);
+        font-weight: 600;
+    }
+    .add-task-button:hover{
+        background-color: white;
+    }
 </style>
 
 <script>
@@ -140,6 +172,9 @@
             deleteButton.addEventListener("click", () => deleteToDo(element.id))
             editButton.addEventListener("click", () => editToDo(element.id))
         }); 
+    }
+    function addTask(){
+
     }
     function pushToDo(){
         let input = document.querySelector("input").value;
